@@ -5,7 +5,7 @@ from ultralytics import YOLO
 
 
 classification_model = tf.keras.models.load_model('acne_classifier.h5')  
-yolo_model = YOLO('best.pt') # Load pre-trained models
+yolo_model = YOLO('yolo.pt') # Load pre-trained models
 
 # Function to capture an image
 def capture_image():
